@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Angular Application</title>
+
+    <style>
+        label {
+            display: block;
+            text-transform: uppercase;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div ng-app="app" class="app">
+        <div ng-controller="UserController as user">
+            <label>Username</label>
+            <input ng-model="search.username" />
+
+            <h5>Country</h5>
+            <label>Short Name</label>
+            <input ng-model="search.country.name.short" />
+
+            <label>Full Name</label>
+            <input ng-model="search.country.name.full" />
+
+            <label>Population</label>
+            <input ng-model="search.country.population" />
+        </div>
+    </div>
+
+    <script src="js/angular.js"></script>
+    <script src="js/app/app.js"></script>
+    <script src="js/app/controllers/UserController.js"></script>
+
+</body>
+</html>
