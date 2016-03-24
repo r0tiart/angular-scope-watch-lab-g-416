@@ -1,4 +1,4 @@
-function SearchController() {
+function UserController() {
 	this.username = '';
 
 	this.country = {
@@ -10,4 +10,4 @@ function SearchController() {
 
 angular
 	.module('app')
-	.controller('SearchController', SearchController);
+	.controller('UserController', UserController);
